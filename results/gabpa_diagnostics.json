@@ -1,0 +1,52 @@
+{
+  "by_level": {
+    "oops": {
+      "100": {
+        "mean_ap": 0.28620192005462075,
+        "mean_site_fraction": 1.0,
+        "n": 100
+      },
+      "50": {
+        "mean_ap": 0.09648109822373446,
+        "mean_site_fraction": 1.0,
+        "n": 100
+      },
+      "75": {
+        "mean_ap": 0.1539218611015164,
+        "mean_site_fraction": 1.0,
+        "n": 100
+      }
+    },
+    "zoops": {
+      "100": {
+        "mean_ap": 0.08015926327452844,
+        "mean_site_fraction": 0.07349,
+        "n": 100
+      },
+      "50": {
+        "mean_ap": 0.07103104184346919,
+        "mean_site_fraction": 0.13439999999999996,
+        "n": 100
+      },
+      "75": {
+        "mean_ap": 0.0710261006785686,
+        "mean_site_fraction": 0.10307999999999998,
+        "n": 100
+      }
+    }
+  },
+  "reference_at_100_percent": {
+    "oops": {
+      "matches": 93,
+      "minimum_overlap": 8,
+      "p_threshold": 0.05,
+      "total": 100
+    },
+    "zoops": {
+      "matches": 1,
+      "minimum_overlap": 8,
+      "p_threshold": 0.05,
+      "total": 100
+    }
+  }
+}

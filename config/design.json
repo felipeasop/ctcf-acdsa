@@ -1,0 +1,35 @@
+{
+  "status": "main_protocol_multifactor_not_executed",
+  "purpose": "Test whether OOPS-ZOOPS disagreement adds diagnostic value beyond internal significance and same-model resampling instability.",
+  "development_cohort": "calu3-development",
+  "validation_cohorts": ["a549-encsr035oxa", "mcf7-encsr000ahd", "gabpa-a549-encsr000bpy"],
+  "cohort_factors": {
+    "calu3-development": "CTCF",
+    "a549-encsr035oxa": "CTCF",
+    "mcf7-encsr000ahd": "CTCF",
+    "gabpa-a549-encsr000bpy": "GABPA"
+  },
+  "factors": {
+    "CTCF": {"width": 19, "reference_id": "CTCF_full", "reference_file": "CTCF_full.meme", "reference_minimum_overlap": 10},
+    "GABPA": {"width": 10, "reference_id": "MA0062.4", "reference_file": "GABPA_MA0062.4.meme", "reference_minimum_overlap": 8}
+  },
+  "trajectories": {
+    "samples": 10,
+    "sample_size": 1000,
+    "input_repeats": 2,
+    "levels_percent": [100, 75, 50, 25, 10, 0],
+    "sample_seed": 20260915,
+    "order_seed": 20260916,
+    "meme_seed": 20260917
+  },
+  "discovery": {"markov_order": 2, "searchsize": 0, "threads": 2},
+  "reliability": {
+    "minimum_overlap_fraction": 0.8,
+    "reference_p_threshold": 0.05,
+    "logistic_C": 1.0,
+    "development_false_positive_limit": 0.1,
+    "bootstrap": 10000,
+    "bootstrap_seed": 20260918
+  },
+  "refinement": {"samples": [1, 6, 10], "maximum_rounds": 3}
+}

@@ -1,0 +1,16 @@
+name: chipseq
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - fastqc=0.12.1
+  - trim-galore=2.2.0
+  - bowtie2=2.5.5
+  - samtools=1.23.1
+  - picard=3.4.0
+  - bedtools=2.31.1
+  - macs3=3.0.4
+  - meme=5.5.9
+  - numpy=2.5.2
+  - scikit-learn=1.9.0
+  - python=3.13.14

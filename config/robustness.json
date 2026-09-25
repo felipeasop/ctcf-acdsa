@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "references": {
+    "blacklist_url": "https://raw.githubusercontent.com/Boyle-Lab/Blacklist/61a04d2c5e49341d76735d485c61f0d1177d08a8/lists/hg38-blacklist.v2.bed.gz",
+    "ctcf_full_source": "https://footprintdb.eead.csic.es/index.php?motif=347a14880822fa09a386e91ac9acf6e7",
+    "ctcf_full_accession": "CTCF_full",
+    "ctcf_full_cycle": 4,
+    "ctcf_full_pseudocount_per_base": 0.5
+  },
+  "window_extension_bp": 100,
+  "window_length_nt": 201,
+  "ambiguous_base_fraction_max": 0.1,
+  "eligible_chromosomes": [
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
+    "12", "13", "14", "15", "16", "17", "18", "19", "20", "21",
+    "22", "X", "Y"
+  ],
+  "split": {
+    "test_fraction": 0.2,
+    "score_bins": 5,
+    "seed": 20260826
+  },
+  "negatives": {
+    "gc_tolerance": 0.10,
+    "seed": 20260827,
+    "train_per_positive": 1,
+    "test_per_positive": 10,
+    "candidates_per_round": 16,
+    "max_rounds": 4000,
+    "cohorts": {
+      "calu3-development": {"gc_tolerance": 0.05, "max_rounds": 2000},
+      "a549-encsr035oxa": {"gc_tolerance": 0.10, "max_rounds": 4000},
+      "mcf7-encsr000ahd": {"gc_tolerance": 0.10, "max_rounds": 4000},
+      "gabpa-a549-encsr000bpy": {"gc_tolerance": 0.10, "max_rounds": 4000}
+    }
+  },
+  "trajectories": {
+    "levels_percent": [100, 75, 50, 25, 10, 0],
+    "repetitions": 10,
+    "sample_size": 1000,
+    "seed": 20260828
+  },
+  "meme": {
+    "version": "5.5.9",
+    "width": 19,
+    "motifs": 1,
+    "markov_order": 2,
+    "searchsize": 0,
+    "seed": 20260829,
+    "threads_per_run": 2
+  },
+  "analysis": {
+    "primary_metric": "average_precision",
+    "aurc_rule": "trapezoidal",
+    "primary_test": "exact_paired_sign_flip",
+    "alpha": 0.05,
+    "scoring_pwm_pseudocount_per_base": 0.5
+  }
+}

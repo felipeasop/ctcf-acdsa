@@ -1,0 +1,20 @@
+# Runtime workspace and downloaded data
+/work/
+/data/
+/reference/
+/logs/
+/tmp/
+
+# Local environments and editor state
+/.micromamba/
+/.venv/
+/.env
+
+# Python and interrupted atomic writes
+**/__pycache__/
+**/*.py[cod]
+**/*.part
+**/*.tmp
+
+# Local execution logs
+*.log

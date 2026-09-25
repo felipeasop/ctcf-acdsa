@@ -1,0 +1,5 @@
+cohort	experiment	biosample	biological_replicates	peak_accession	peak_type	md5	url
+calu3-development	ENCSR921ERP	Calu3	1	ENCFF511NNV	ENCODE preferred-default IDR thresholded peaks, GRCh38	26b2276e96393bc27795c7e9cffcdc42	https://www.encodeproject.org/files/ENCFF511NNV/@@download/ENCFF511NNV.bed.gz
+a549-encsr035oxa	ENCSR035OXA	A549, dexamethasone 0 h	3	ENCFF624ZSR	ENCODE preferred-default IDR thresholded peaks, GRCh38	28df1622fd35c6caacfe9351815c7c9e	https://www.encodeproject.org/files/ENCFF624ZSR/@@download/ENCFF624ZSR.bed.gz
+mcf7-encsr000ahd	ENCSR000AHD	MCF-7	2	ENCFF942TCG	ENCODE preferred-default optimal IDR thresholded peaks, GRCh38	df8e06eabcef14bb91558c96f28066d6	https://www.encodeproject.org/files/ENCFF942TCG/@@download/ENCFF942TCG.bed.gz
+gabpa-a549-encsr000bpy	ENCSR000BPY	A549, ethanol 0.02% 1 h; GABPA	2	ENCFF520GJC	ENCODE preferred-default optimal IDR thresholded peaks, GRCh38	958f89877700b0d9215a3c961d07a91c	https://www.encodeproject.org/files/ENCFF520GJC/@@download/ENCFF520GJC.bed.gz
